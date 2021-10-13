@@ -35,47 +35,27 @@ class LayoutRow extends StatelessWidget {
             ),
             // ignore: avoid_unnecessary_containers
             body: Container(
-              child: Column(
-                children: [
-                  Row(
-                    children: const [
-                      Text(
-                        'kolom Pertama baris Pertama',
-                        textAlign: TextAlign.left,
-                      ),
-                      Spacer(),
-                      Text(
-                        'kolom kedua baris Pertama',
-                        textAlign: TextAlign.center,
-                      ),
-                      Spacer(),
-                      Text(
-                        'kolom Ketiga baris Pertama',
-                        textAlign: TextAlign.right,
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: const [
-                      Text(
-                        'kolom Pertama baris kedua',
-                        textAlign: TextAlign.left,
-                      ),
-                      Spacer(),
-                      Text(
-                        'kolom kedua baris kedua',
-                        textAlign: TextAlign.center,
-                      ),
-                      Spacer(),
-                      Text(
-                        'kolom ketiga baris kedua',
-                        textAlign: TextAlign.right,
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            )));
+                child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      'Nasi Goreng',
+                      textAlign: TextAlign.left,
+                    ),
+                    Spacer(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Image.asset(
+                          'lib/assets/gambar/nasigoreng.jpg',
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
+            ))));
   }
 }
 
